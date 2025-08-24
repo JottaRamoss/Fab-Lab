@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+    <title>Fab Lab Brasil | Centro de pesquisa, educação e inovação da FIRJAN</title>
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- Fonts otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link href="style.css" rel="stylesheet"/>
+    
+    <!-- Meta tags SEO melhoradas -->
+    <meta name="description" content="Fab Lab Brasil é um centro de pesquisa, educação e inovação da FIRJAN que desenvolve talentos e capacitação para o futuro da indústria brasileira através de fabricação digital e tecnologias emergentes.">
+    <meta name="keywords" content="fab lab, fabricação digital, inovação, FIRJAN, educação, pesquisa, tecnologia, indústria 4.0, impressão 3D, robótica, automação">
+    <meta name="author" content="FIRJAN - Fab Lab Brasil">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fablabbrasil.org">
+    
+    <!-- Open Graph melhorado -->
+    <meta property="og:title" content="Fab Lab Brasil | Centro de pesquisa, educação e inovação da FIRJAN">
+    <meta property="og:description" content="Centro de pesquisa e educação que está repensando a maneira como vivemos, trabalhamos e nos divertimos através da fabricação digital e inovação.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fablabbrasil.org">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Fab Lab Brasil">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fab Lab Brasil | Centro de pesquisa, educação e inovação da FIRJAN">
+    <meta name="twitter:description" content="Centro de pesquisa e educação que está repensando a maneira como vivemos, trabalhamos e nos divertimos através da fabricação digital e inovação.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1200&h=630&fit=crop">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Fab Lab Brasil",
+      "url": "https://fablabbrasil.org",
+      "logo": "https://institutofablabbrasil.org/wp-content/uploads/2021/04/cropped-cropped-Logo-Instituto-Site-2-180x179.png",
+      "description": "Centro de pesquisa, educação e inovação da FIRJAN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR",
+        "addressRegion": "RJ"
+      },
+      "sameAs": [
+        "https://www.facebook.com/fablabbrasil",
+        "https://www.instagram.com/fablabbrasil",
+        "https://www.linkedin.com/company/fab-lab-brasil"
+      ]
+    }
+    </script>
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#0066ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Fab Lab Brasil">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+</head>
+<body class="home">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-atom"></i>
+            </div>
+            <div class="loading-text">Fab Lab Brasil</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skip to content para acessibilidade -->
+    <a href="#main-content" class="skip-to-content">Pular para o conteúdo principal</a>
+
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" role="banner">
+            <div class="container">
+                <!-- Header Top -->
+                <div class="header-top">
+                    <div class="firjan-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNDAiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zMC4zIDExLjloNC4zdjE2LjNoLTQuM3YtNi44aC01LjV2Ni44aC00LjNWMTEuOWg0LjN2Ni40aDUuNXYtNi40em0xNC4xIDQuM2g0LjF2MTJoLTQuMXYtMTJ6bTAgNC4zaDQuMXY0LjVoLTQuMXYtNC41em0xMC40LTQuM2g0LjNsLTMuMSA1LjV2LTUuNWg0LjN2MTJoLTQuM2wtMy4xLTUuNXY1LjVoLTQuM1YxMS45em0xNC4zIDBoNC4zdjEyLjNoLTQuM3YtNi44aC01LjV2Ni44aC00LjNWMTEuOWg0LjN2Ni40aDUuNXYtNi40em0xNC4xIDQuM2g0LjF2MTJoLTQuMXYtMTJ6bTAgNC4zaDQuMXY0LjVoLTQuMXYtNC41em0tNjguOS0xMC40YzAtMy41IDIuOS02LjQgNi40LTYuNCAzLjUgMCA2LjQgMi45IDYuNCA2LjQgMCAzLjUtMi45IDYuNC02LjQgNi40LTMuNS4xLTYuNC0yLjgtNi40LTYuNHptNC4zIDBjMCAxLjIgMSAzLjIgMi4xIDMuMiAxLjIgMCAyLjEtMiAyLjEtMy4yIDAtMS4yLTEtMy4yLTIuMS0zLjItMS4xIDAtMi4xIDItMi4xIDMuMnoiLz48L3N2Zz4=" alt="FIRJAN" width="100" height="40">
+                    </div>
+                    <div class="header-actions">
+                        <button class="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <a href="#contato" class="btn-outline">Contato</a>
+                        <div class="language-selector">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="es">ES</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-container">
+                    <a href="#" class="logo-link">
+                        <img class="logo" src="https://institutofablabbrasil.org/wp-content/uploads/2021/04/cropped-cropped-Logo-Instituto-Site-2-180x179.png" alt="Fab Lab Brasil" width="60" height="60"/>
+                    </a>
+                    
+                    <nav class="nav-bar" role="navigation" aria-label="Menu principal">
+                        <ul class="menu" id="main-nav">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#sobre" aria-expanded="false" aria-haspopup="true">
+                                    Sobre <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="sub-menu" role="menu">
+                                    <li role="menuitem"><a href="#sobre">Nossa História</a></li>
+                                    <li role="menuitem"><a href="#missao">Missão e Visão</a></li>
+                                    <li role="menuitem"><a href="#equipe">Equipe</a></li>
+                                    <li role="menuitem"><a href="#instalacoes">Instalações</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#servicos" aria-expanded="false" aria-haspopup="true">
+                                    Serviços <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="sub-menu" role="menu">
+                                    <li role="menuitem"><a href="#educacao">Educação</a></li>
+                                    <li role="menuitem"><a href="#pesquisa">Pesquisa</a></li>
+                                    <li role="menuitem"><a href="#consultoria">Consultoria</a></li>
+                                    <li role="menuitem"><a href="#fabricacao">Fabricação Digital</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#projetos">Projetos</a></li>
+                            <li class="menu-item"><a href="#eventos">Eventos</a></li>
+                            <li class="menu-item"><a href="#blog">Blog</a></li>
+                            <li class="menu-item"><a href="#contato">Contato</a></li>
+                            <li class="menu-item search-item">
+                                <button class="search-toggle" aria-label="Abrir busca">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                        </ul>
+                        
+                        <button class="btn-menu" aria-label="Abrir menu mobile" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Search Popup -->
+            <div class="search-popup" role="dialog" aria-labelledby="search-title" aria-hidden="true">
+                <div class="container">
+                    <h2 id="search-title" class="sr-only">Buscar no site</h2>
+                    <div class="search-form">
+                        <form action="#" role="search">
+                            <input class="form-control" name="s" placeholder="O que você está procurando?" type="search" aria-label="Campo de busca"/>
+                            <button class="btn-search" type="submit" aria-label="Buscar">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <button class="btn-close" aria-label="Fechar busca">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" role="main">
+            <!-- Hero Slideshow -->
+            <section class="slideshow" aria-label="Destaques principais">
+                <div class="slide active" data-bg="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80">
+                    <div class="slide-content">
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="tag" data-aos="fade-up">Inovação</span>
+                                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                                    Transformando Ideias em Realidade
+                                </h1>
+                                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                                    O Fab Lab Brasil é um centro de pesquisa, educação e inovação que conecta tecnologia, criatividade e empreendedorismo para construir o futuro da indústria brasileira.
+                                </p>
+                                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                                    <a class="btn-primary" href="#sobre" role="button">
+                                        <span>Conheça nossa história</span>
+                                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn-outline-white" href="#projetos" role="button">
+                                        <span>Ver projetos</span>
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bg"></div>
+                </div>
+
+                <div class="slide" data-bg="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80">
+                    <div class="slide-content">
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="tag" data-aos="fade-up">Educação</span>
+                                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                                    Formando os Profissionais do Futuro
+                                </h1>
+                                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                                    Nossos programas educacionais combinam teoria e prática para desenvolver competências em fabricação digital, design thinking e inovação tecnológica.
+                                </p>
+                                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                                    <a class="btn-primary" href="#educacao" role="button">
+                                        <span>Conheça nossos cursos</span>
+                                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn-outline-white" href="#contato" role="button">
+                                        <span>Inscreva-se</span>
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bg"></div>
+                </div>
+
+                <div class="slide" data-bg="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80">
+                    <div class="slide-content">
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="tag" data-aos="fade-up">Tecnologia</span>
+                                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                                    Fabricação Digital Avançada
+                                </h1>
+                                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                                    Equipamentos de última geração em impressão 3D, corte a laser, robótica e automação para prototipagem rápida e produção personalizada.
+                                </p>
+                                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                                    <a class="btn-primary" href="#fabricacao" role="button">
+                                        <span>Explore tecnologias</span>
+                                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn-outline-white" href="#contato" role="button">
+                                        <span>Agende uma visita</span>
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bg"></div>
+                </div>
+
+                <!-- Slide Controls -->
+                <div class="slide-controls">
+                    <button class="slide-prev" aria-label="Slide anterior">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="slide-next" aria-label="Próximo slide">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                    <div class="slide-indicators" role="tablist" aria-label="Indicadores de slide">
+                        <button class="indicator active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+                        <button class="indicator" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                        <button class="indicator" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span>Role para baixo</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div>
+            </section>
+
+            <!-- Sobre Section -->
+            <section id="sobre" class="section-about">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Sobre Nós</span>
+                        <h2 class="section-title">Pioneiros em Fabricação Digital no Brasil</h2>
+                        <p class="section-description">
+                            Desde nossa fundação, o Fab Lab Brasil tem sido um catalisador de inovação, conectando pessoas, tecnologias e ideias para criar soluções que transformam a sociedade.
+                        </p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="about-grid">
+                            <div class="about-text">
+                                <h3>Nossa História</h3>
+                                <p>
+                                    O Fab Lab Brasil nasceu da visão de democratizar o acesso às tecnologias de fabricação digital e promover a inovação colaborativa. Como parte da rede global de Fab Labs do MIT, somos um espaço onde a criatividade encontra a tecnologia.
+                                </p>
+                                <p>
+                                    Nosso laboratório é equipado com as mais modernas tecnologias de prototipagem rápida, incluindo impressoras 3D, cortadoras a laser, fresadoras CNC e equipamentos de eletrônica, permitindo que ideias se transformem rapidamente em protótipos funcionais.
+                                </p>
+                                <div class="about-stats">
+                                    <div class="stat">
+                                        <span class="stat-number" data-count="500">0</span>
+                                        <span class="stat-label">Projetos Realizados</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number" data-count="1200">0</span>
+                                        <span class="stat-label">Pessoas Capacitadas</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number" data-count="50">0</span>
+                                        <span class="stat-label">Empresas Parceiras</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-image">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laboratório de fabricação digital" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Serviços Section -->
+            <section id="servicos" class="section-services">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Nossos Serviços</span>
+                        <h2 class="section-title">Soluções Completas em Inovação</h2>
+                        <p class="section-description">
+                            Oferecemos uma gama completa de serviços para empresas, instituições e indivíduos que buscam inovar e se destacar no mercado.
+                        </p>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Educação e Capacitação</h3>
+                            <p>Cursos e workshops em fabricação digital, design thinking, prototipagem rápida e tecnologias emergentes.</p>
+                            <ul class="service-features">
+                                <li>Cursos presenciais e online</li>
+                                <li>Workshops especializados</li>
+                                <li>Certificações internacionais</li>
+                                <li>Programas corporativos</li>
+                            </ul>
+                            <a href="#educacao" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Pesquisa e Desenvolvimento</h3>
+                            <p>Projetos de P&D em parceria com empresas e instituições para desenvolver soluções inovadoras.</p>
+                            <ul class="service-features">
+                                <li>Prototipagem rápida</li>
+                                <li>Desenvolvimento de produtos</li>
+                                <li>Pesquisa aplicada</li>
+                                <li>Inovação aberta</li>
+                            </ul>
+                            <a href="#pesquisa" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Consultoria em Inovação</h3>
+                            <p>Consultoria estratégica para implementação de processos de inovação e transformação digital.</p>
+                            <ul class="service-features">
+                                <li>Diagnóstico de inovação</li>
+                                <li>Estratégia digital</li>
+                                <li>Implementação de labs</li>
+                                <li>Cultura de inovação</li>
+                            </ul>
+                            <a href="#consultoria" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3>Fabricação Digital</h3>
+                            <p>Serviços de fabricação digital para prototipagem, produção personalizada e pequenas séries.</p>
+                            <ul class="service-features">
+                                <li>Impressão 3D</li>
+                                <li>Corte a laser</li>
+                                <li>Usinagem CNC</li>
+                                <li>Eletrônica embarcada</li>
+                            </ul>
+                            <a href="#fabricacao" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projetos Section -->
+            <section id="projetos" class="section-projects">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Nossos Projetos</span>
+                        <h2 class="section-title">Inovações que Transformam</h2>
+                        <p class="section-description">
+                            Conheça alguns dos projetos mais impactantes desenvolvidos em nosso laboratório, desde soluções para a indústria até iniciativas sociais.
+                        </p>
+                    </div>
+                    
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="industria">Indústria</button>
+                        <button class="filter-btn" data-filter="saude">Saúde</button>
+                        <button class="filter-btn" data-filter="educacao">Educação</button>
+                        <button class="filter-btn" data-filter="social">Social</button>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card" data-category="industria">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projeto de automação industrial" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" aria-label="Ver detalhes do projeto">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Indústria</span>
+                                <h3>Automação Industrial 4.0</h3>
+                                <p>Sistema de automação inteligente para otimização de processos produtivos utilizando IoT e machine learning.</p>
+                                <div class="project-tags">
+                                    <span class="tag">IoT</span>
+                                    <span class="tag">Automação</span>
+                                    <span class="tag">AI</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" data-category="saude">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projeto de dispositivo médico" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" aria-label="Ver detalhes do projeto">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Saúde</span>
+                                <h3>Próteses Personalizadas</h3>
+                                <p>Desenvolvimento de próteses customizadas utilizando impressão 3D e design paramétrico para melhor adaptação.</p>
+                                <div class="project-tags">
+                                    <span class="tag">3D Printing</span>
+                                    <span class="tag">Saúde</span>
+                                    <span class="tag">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" data-category="educacao">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projeto educacional" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" aria-label="Ver detalhes do projeto">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Educação</span>
+                                <h3>Kit Educacional STEAM</h3>
+                                <p>Kit de robótica educacional para ensino de ciências, tecnologia, engenharia, artes e matemática.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Robótica</span>
+                                    <span class="tag">Educação</span>
+                                    <span class="tag">STEAM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" data-category="social">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projeto social" loading="lazy">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" aria-label="Ver detalhes do projeto">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Social</span>
+                                <h3>Tecnologia Assistiva</h3>
+                                <p>Desenvolvimento de dispositivos assistivos de baixo custo para pessoas com deficiência.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Acessibilidade</span>
+                                    <span class="tag">Social</span>
+                                    <span class="tag">Inclusão</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contato Section -->
+            <section id="contato" class="section-contact">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Entre em Contato</span>
+                        <h2 class="section-title">Vamos Inovar Juntos</h2>
+                        <p class="section-description">
+                            Tem uma ideia? Quer conhecer nossos serviços? Entre em contato conosco e descubra como podemos ajudar a transformar sua visão em realidade.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Endereço</h4>
+                                    <p>Av. Graça Aranha, 1<br>Centro, Rio de Janeiro - RJ<br>CEP: 20030-002</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Telefone</h4>
+                                    <p>(21) 2563-4571<br>(21) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>E-mail</h4>
+                                    <p>contato@fablabbrasil.org<br>info@fablabbrasil.org</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Horário de Funcionamento</h4>
+                                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form-container">
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Nome completo</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Telefone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Assunto</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Selecione um assunto</option>
+                                        <option value="educacao">Educação e Cursos</option>
+                                        <option value="pesquisa">Pesquisa e Desenvolvimento</option>
+                                        <option value="consultoria">Consultoria</option>
+                                        <option value="fabricacao">Fabricação Digital</option>
+                                        <option value="parceria">Parcerias</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        Quero receber novidades por e-mail
+                                    </label>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="privacy" name="privacy" required>
+                                        <span class="checkmark"></span>
+                                        Concordo com a <a href="#" target="_blank">Política de Privacidade</a>
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn-primary">
+                                    <span>Enviar mensagem</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="https://institutofablabbrasil.org/wp-content/uploads/2021/04/cropped-cropped-Logo-Instituto-Site-2-180x179.png" alt="Fab Lab Brasil" width="80" height="80">
+                            <h3>Fab Lab Brasil</h3>
+                        </div>
+                        <p>Centro de pesquisa, educação e inovação da FIRJAN que desenvolve talentos e capacitação para o futuro da indústria brasileira.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#eventos">Eventos</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#educacao">Educação</a></li>
+                            <li><a href="#pesquisa">Pesquisa</a></li>
+                            <li><a href="#consultoria">Consultoria</a></li>
+                            <li><a href="#fabricacao">Fabricação Digital</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Newsletter</h4>
+                        <p>Receba as últimas novidades do Fab Lab Brasil</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" placeholder="Seu e-mail" required aria-label="E-mail para newsletter">
+                                <button type="submit" aria-label="Inscrever-se">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <p>&copy; 2024 Fab Lab Brasil - FIRJAN. Todos os direitos reservados.</p>
+                        <div class="legal-links">
+                            <a href="#">Política de Privacidade</a>
+                            <a href="#">Termos de Uso</a>
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
