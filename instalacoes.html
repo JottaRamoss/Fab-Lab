@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+    <title>Instalações | Instituto Fab Lab Brasil - Fomentando a fabricação digital no Brasil</title>
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- Fonts otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link href="style.css" rel="stylesheet"/>
+    <link href="instalacoes.css" rel="stylesheet"/>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Conheça as instalações do Fab Lab Brasil, laboratórios equipados com tecnologias de ponta para fabricação digital, pesquisa e inovação.">
+    <meta name="keywords" content="instalações fab lab, laboratórios, equipamentos, fabricação digital, impressão 3D, CNC, laser, FIRJAN">
+    <meta name="author" content="FIRJAN - Fab Lab Brasil">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Instalações | Fab Lab Brasil">
+    <meta property="og:description" content="Explore nossas instalações modernas e equipamentos de última geração para fabricação digital e inovação tecnológica.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&h=630&fit=crop">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+</head>
+<body class="page-instalacoes">
+
+<!-- Loading Screen -->
+<div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+        <div class="loading-logo">
+            <i class="fas fa-atom"></i>
+        </div>
+        <div class="loading-text">Carregando Instalações</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header" role="banner">
+        <div class="container">
+            <!-- Navigation -->
+            <div class="nav-container">
+                <a href="index.html" class="logo-link">
+                    <img class="logo" src="https://institutofablabbrasil.org/wp-content/uploads/2021/04/cropped-cropped-Logo-Instituto-Site-2-180x179.png" alt="Fab Lab Brasil" width="60" height="60"/>
+                </a>
+                
+                <nav class="nav-bar" role="navigation" aria-label="Menu principal">
+                    <ul class="menu" id="main-nav">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" aria-expanded="false" aria-haspopup="true">
+                                Sobre <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="sub-menu" role="menu">
+                                <li role="menuitem"><a href="historia.html">Nossa História</a></li>
+                                <li role="menuitem"><a href="missao-visao.html">Missão e Visão</a></li>
+                                <li role="menuitem"><a href="equipe.html">Equipe</a></li>
+                                <li role="menuitem"><a href="instalacoes.html" aria-current="page">Instalações</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" aria-expanded="false" aria-haspopup="true">
+                                Serviços <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="sub-menu" role="menu">
+                                <li role="menuitem"><a href="educacao.html">Educação</a></li>
+                                <li role="menuitem"><a href="pesquisa.html">Pesquisa</a></li>
+                                <li role="menuitem"><a href="consultoria.html">Consultoria</a></li>
+                                <li role="menuitem"><a href="fabricacao-digital.html">Fabricação Digital</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="projetos.html">Projetos</a></li>
+                        <li class="menu-item"><a href="pesquisas.html">Pesquisas</a></li>
+                        <li class="menu-item"><a href="eventos.html">Eventos</a></li>
+                        <li class="menu-item"><a href="rede.html">Rede</a></li>
+                        <li class="menu-item"><a href="blog.html">Blog</a></li>
+                        <li class="menu-item"><a href="contato.html">Contato</a></li>
+                        <li class="menu-item search-item">
+                            <button class="search-toggle" aria-label="Abrir busca">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-menu" aria-label="Abrir menu mobile" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Search Popup -->
+        <div class="search-popup" role="dialog" aria-labelledby="search-title" aria-hidden="true">
+            <div class="container">
+                <h2 id="search-title" class="sr-only">Buscar no site</h2>
+                <div class="search-form">
+                    <form action="#" role="search">
+                        <input class="form-control" name="s" placeholder="O que você está procurando?" type="search" aria-label="Campo de busca"/>
+                        <button class="btn-search" type="submit" aria-label="Buscar">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="btn-close" aria-label="Fechar busca">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="page-hero" aria-label="Cabeçalho da página Instalações">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-particles"></div>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <nav class="breadcrumb" aria-label="Navegação estrutural">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li aria-current="page">Instalações</li>
+                        </ol>
+                    </nav>
+                    <h1 class="hero-title">Nossas Instalações</h1>
+                    <p class="hero-subtitle">
+                        Explore nossos laboratórios modernos e equipamentos de última geração, projetados para oferecer o melhor ambiente para fabricação digital, pesquisa e inovação.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#labs" class="btn btn-primary">
+                            <i class="fas fa-microscope"></i>
+                            Explorar Laboratórios
+                        </a>
+                        <a href="#tour" class="btn btn-outline">
+                            <i class="fas fa-play"></i>
+                            Tour Virtual
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')"></div>
+        </section>
+
+        <!-- Facilities Overview -->
+        <section class="section-overview" id="overview">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Nosso Espaço</span>
+                    <h2 class="section-title">Espaços Projetados para Inovação</h2>
+                    <p class="section-description">
+                        Nossas instalações ocupam mais de 2.000m² de área construída, distribuídos em laboratórios especializados, 
+                        salas de aula, espaços de coworking e áreas de convivência.
+                    </p>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="overview-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overview-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3 class="overview-title">2.000m²</h3>
+                        <p class="overview-description">Área Total</p>
+                    </div>
+                    
+                    <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overview-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="overview-title">8</h3>
+                        <p class="overview-description">Laboratórios Especializados</p>
+                    </div>
+                    
+                    <div class="overview-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="overview-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="overview-title">50+</h3>
+                        <p class="overview-description">Equipamentos de Ponta</p>
+                    </div>
+                    
+                    <div class="overview-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="overview-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="overview-title">100+</h3>
+                        <p class="overview-description">Capacidade Total</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laboratories -->
+        <section class="section-labs" id="labs">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Nossos Espaços</span>
+                    <h2 class="section-title">Laboratórios Especializados</h2>
+                    <p class="section-description">
+                        Cada laboratório é equipado com tecnologias específicas para diferentes áreas da fabricação digital.
+                    </p>
+                </div>
+
+                <!-- Filtros dos Laboratórios -->
+                <div class="labs-filters" data-aos="fade-up" data-aos-delay="100">
+                    <button class="lab-filter-btn active" data-filter="all">Todos</button>
+                    <button class="lab-filter-btn" data-filter="fabricacao">Fabricação</button>
+                    <button class="lab-filter-btn" data-filter="eletronica">Eletrônica</button>
+                    <button class="lab-filter-btn" data-filter="marcenaria">Marcenaria</button>
+                    <button class="lab-filter-btn" data-filter="robotica">Robótica</button>
+                    <button class="lab-filter-btn" data-filter="digital">Digital</button>
+                    <button class="lab-filter-btn" data-filter="biotecnologia">Biotecnologia</button>
+                </div>
+
+                <!-- Grid dos Laboratórios -->
+                <div class="labs-grid">
+                    <!-- Os laboratórios serão renderizados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Categories -->
+        <section class="section-equipment" id="equipment">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Tecnologia</span>
+                    <h2 class="section-title">Equipamentos por Categoria</h2>
+                    <p class="section-description">
+                        Conheça os equipamentos disponíveis em cada categoria de fabricação digital.
+                    </p>
+                </div>
+
+                <div class="equipment-categories">
+                    <!-- As categorias serão renderizadas via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Tour -->
+        <section class="section-virtual-tour" id="tour">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Experiência Imersiva</span>
+                    <h2 class="section-title">Tour Virtual 360°</h2>
+                    <p class="section-description">
+                        Explore nossas instalações de forma interativa através do nosso tour virtual em 360 graus.
+                    </p>
+                </div>
+
+                <div class="tour-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tour-placeholder">
+                        <div class="tour-icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <h3>Tour Virtual Interativo</h3>
+                        <p>Navegue pelos nossos laboratórios em 360°</p>
+                        <div class="tour-controls">
+                            <button class="tour-btn" onclick="startVirtualTour()">
+                                <i class="fas fa-play"></i>
+                                Iniciar Tour
+                            </button>
+                            <button class="tour-btn" onclick="toggleFullscreen()">
+                                <i class="fas fa-expand"></i>
+                                Tela Cheia
+                            </button>
+                            <button class="tour-btn" onclick="startVRMode()">
+                                <i class="fas fa-vr-cardboard"></i>
+                                Modo VR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="section-booking" id="booking">
+            <div class="container">
+                <div class="booking-content" data-aos="fade-up">
+                    <h2 class="booking-title">Agende sua Visita</h2>
+                    <p class="booking-description">
+                        Interessado em conhecer nossas instalações pessoalmente? Agende uma visita guiada e descubra como podemos ajudar em seus projetos.
+                    </p>
+
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa/Instituição</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lab">Laboratório de Interesse *</label>
+                                <select id="lab" name="lab" required>
+                                    <option value="">Selecione um laboratório</option>
+                                    <!-- Opções serão preenchidas via JavaScript -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Data Preferida *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="time">Horário Preferido *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Selecione um horário</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="visitors">Número de Visitantes</label>
+                                <select id="visitors" name="visitors">
+                                    <option value="1">1 pessoa</option>
+                                    <option value="2-5">2-5 pessoas</option>
+                                    <option value="6-10">6-10 pessoas</option>
+                                    <option value="10+">Mais de 10 pessoas</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem Adicional</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre seus objetivos e interesses..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-calendar-check"></i>
+                            Agendar Visita
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="section-location" id="location">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-info" data-aos="fade-right">
+                        <h2 class="location-title">Nossa Localização</h2>
+                        <p class="location-description">
+                            Estamos estrategicamente localizados no centro do Rio de Janeiro, 
+                            facilitando o acesso para estudantes, pesquisadores e empresas de toda a região.
+                        </p>
+                        
+                        <div class="location-details">
+                            <div class="location-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Endereço</strong><br>
+                                    Av. Graça Aranha, 1 - Centro<br>
+                                    Rio de Janeiro - RJ, 20030-002
+                                </div>
+                            </div>
+                            
+                            <div class="location-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Horário de Funcionamento</strong><br>
+                                    Segunda a Sexta: 8h às 18h<br>
+                                    Sábado: 9h às 13h
+                                </div>
+                            </div>
+                            
+                            <div class="location-item">
+                                <i class="fas fa-subway"></i>
+                                <div>
+                                    <strong>Transporte Público</strong><br>
+                                    Estação Carioca (Metrô)<br>
+                                    Várias linhas de ônibus
+                                </div>
+                            </div>
+                            
+                            <div class="location-item">
+                                <i class="fas fa-parking"></i>
+                                <div>
+                                    <strong>Estacionamento</strong><br>
+                                    Conveniado disponível<br>
+                                    Vagas para visitantes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map" data-aos="fade-left">
+                        <div class="map-placeholder" onclick="openMap()">
+                            <i class="fas fa-map"></i>
+                            <h3>Ver no Google Maps</h3>
+                            <p>Clique para abrir a localização</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Rodapé Aprimorado - Fab Lab Brasil -->
+        <footer class="footer-enhanced">
+            <div class="footer-container">
+                <!-- Seção Superior -->
+                <div class="footer-top">
+                    <div class="footer-grid">
+                        <!-- Seção da Marca -->
+                        <div class="footer-brand">
+                            <a href="index.html" class="footer-logo">
+                                <div class="footer-logo-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div class="footer-logo-text"> Instituto Fab Lab Brasil - Fomentando a fabricação digital no Brasil</div>
+                            </a>
+                            
+                            <p class="footer-description">
+                                Centro de pesquisa, educação e inovação da FIRJAN que desenvolve talentos e capacitação para o futuro da indústria brasileira através de fabricação digital e tecnologias emergentes.
+                            </p>
+                            
+                            <!-- Redes Sociais -->
+                            <div class="footer-social">
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            
+                            <!-- Certificações -->
+                            <div class="footer-certifications">
+                                <div class="certification-badge" title="Fab Foundation">FAB</div>
+                                <div class="certification-badge" title="FIRJAN">FIRJAN</div>
+                                <div class="certification-badge" title="ISO 9001">ISO</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Seção Programas -->
+                        <div class="footer-section">
+                            <h4>Programas</h4>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-graduation-cap"></i> MDEF</a></li>
+                                <li><a href="#"><i class="fas fa-certificate"></i> Fab Academy</a></li>
+                                <li><a href="#"><i class="fas fa-tools"></i> Workshops</a></li>
+                                <li><a href="#"><i class="fas fa-laptop"></i> Cursos Online</a></li>
+                                <li><a href="#"><i class="fas fa-users"></i> Mentoria</a></li>
+                                <li><a href="#"><i class="fas fa-handshake"></i> Parcerias</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Seção Sobre -->
+                        <div class="footer-section">
+                            <h4>Sobre</h4>
+                            <ul>
+                                <li><a href="historia.html"><i class="fas fa-history"></i> Nossa História</a></li>
+                                <li><a href="equipe.html"><i class="fas fa-users"></i> Equipe</a></li>
+                                <li><a href="missao-visao.html"><i class="fas fa-bullseye"></i> Missão & Visão</a></li>
+                                <li><a href="instalacoes.html"><i class="fas fa-building"></i> Instalações</a></li>
+                                <li><a href="projetos.html"><i class="fas fa-project-diagram"></i> Projetos</a></li>
+                                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Seção Serviços -->
+                        <div class="footer-section">
+                            <h4>Serviços</h4>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-cube"></i> Impressão 3D</a></li>
+                                <li><a href="#"><i class="fas fa-cut"></i> Corte a Laser</a></li>
+                                <li><a href="#"><i class="fas fa-cogs"></i> CNC</a></li>
+                                <li><a href="#"><i class="fas fa-microchip"></i> Eletrônica</a></li>
+                                <li><a href="#"><i class="fas fa-robot"></i> Robótica</a></li>
+                                <li><a href="#"><i class="fas fa-lightbulb"></i> Consultoria</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Seção Contato e Newsletter -->
+                        <div class="footer-section">
+                            <!-- Informações de Contato -->
+                            <h4>Contato</h4>
+                            <div class="footer-contact">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Endereço</strong><br>
+                                        Av. Graça Aranha, 1 - Centro<br>
+                                        Rio de Janeiro - RJ
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Telefone</strong><br>
+                                        (21) 3307-1000
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <strong>E-mail</strong><br>
+                                        contato@fablabbrasil.org
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Horário</strong><br>
+                                        Seg-Sex: 8h às 18h
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Newsletter -->
+                            <div class="footer-newsletter">
+                                <h5 class="newsletter-title">Newsletter</h5>
+                                <p class="newsletter-description">
+                                    Receba as últimas novidades sobre fabricação digital, cursos e eventos.
+                                </p>
+                                <form class="newsletter-form" id="newsletterForm">
+                                    <input 
+                                        type="email" 
+                                        class="newsletter-input" 
+                                        placeholder="Seu melhor e-mail"
+                                        required
+                                        aria-label="E-mail para newsletter"
+                                        id="newsletterEmail"
+                                    >
+                                    <button 
+                                        type="submit" 
+                                        class="newsletter-btn"
+                                        aria-label="Inscrever-se na newsletter"
+                                        id="newsletterBtn"
+                                    >
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seção Inferior -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            <p>&copy; 2025 Instituto Fab Lab Brasil - Fomentando a fabricação digital no Brasil - Todos os direitos reservados.</p>
+                        </div>
+                        
+                        <div class="footer-legal">
+                            <a href="#">Política de Privacidade</a>
+                            <a href="#">Termos de Uso</a>
+                            <a href="#">Cookies</a>
+                            <a href="contato.html">Contato</a>
+                            <a href="#">Acessibilidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Live Region for Screen Readers -->
+<div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script-melhorado.js"></script>
+<script src="instalacoes.js"></script>
+
+</body>
+</html>
+
