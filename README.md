@@ -1,125 +1,96 @@
-# Fab Lab Brasil - Arquivos Corrigidos
+# 🔬 Fab Lab Brasil — Site Institucional + FAB BR 25
 
-## Correções Realizadas
+> Site institucional do **Instituto Fab Lab Brasil** desenvolvido com foco no evento **FAB BR 25**, encontro da comunidade brasileira e ibero-americana de fabricação digital realizado em Sorocaba/SP em novembro de 2025.
 
-### 1. Padronização de Referências CSS/JS
+![Status](https://img.shields.io/badge/status-pausado-yellow) ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-#### Problemas Corrigidos:
-- ✅ **historia.html**: Adicionada referência ao `historia.css` que estava faltando
-- ✅ **historia.html**: Adicionada referência ao `historia.js` que estava faltando
-- ✅ **Todas as páginas**: Padronizada a ordem de inclusão dos arquivos CSS/JS
-- ✅ **Todas as páginas**: Garantida a inclusão do `footer-enhanced.css` e `footer-enhanced.js`
-
-#### Ordem Padronizada de Inclusão:
-```html
-<!-- CSS -->
-<link href="style.css" rel="stylesheet"/>
-<link href="[pagina-especifica].css" rel="stylesheet"/>
-<link href="footer-enhanced.css" rel="stylesheet"/>
-
-<!-- JavaScript -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
-<script src="[pagina-especifica].js"></script>
-<script src="footer-enhanced.js"></script>
-```
-
-### 2. Arquivos Criados/Corrigidos
-
-#### Novos Arquivos:
-- ✅ **historia.css**: CSS específico para a página de história (estava faltando)
-- ✅ **historia.js**: JavaScript específico para a página de história (estava faltando)
-
-#### Arquivos Corrigidos:
-- ✅ **historia.html**: Estrutura HTML corrigida com referências adequadas
-
-### 3. Melhorias Implementadas
-
-#### CSS:
-- ✅ Variáveis CSS padronizadas para cores e espaçamentos
-- ✅ Sistema de animações consistente
-- ✅ Responsividade melhorada
-- ✅ Efeitos visuais aprimorados
-
-#### JavaScript:
-- ✅ Funções utilitárias organizadas
-- ✅ Event listeners otimizados
-- ✅ Animações de scroll implementadas
-- ✅ Sistema de lazy loading para imagens
-- ✅ Navegação por teclado adicionada
-
-### 4. Funcionalidades Adicionadas
-
-#### Página História:
-- ✅ Timeline interativa com animações
-- ✅ Contadores animados para estatísticas de impacto
-- ✅ Lazy loading para imagens da timeline
-- ✅ Navegação por teclado (setas ou j/k)
-- ✅ Efeito parallax suave
-- ✅ Função para destacar anos específicos
-
-#### Melhorias Gerais:
-- ✅ Loading screens padronizados
-- ✅ Animações de entrada consistentes
-- ✅ Otimização de performance
-- ✅ Melhor acessibilidade
-
-### 5. Estrutura de Arquivos
-
-```
-fab_lab_corrigido/
-├── index.html
-├── historia.html (✅ CORRIGIDO)
-├── missao-visao.html
-├── equipe.html
-├── instalacoes.html
-├── projetos.html
-├── blog.html
-├── contato.html
-├── style.css
-├── historia.css (✅ NOVO)
-├── missao-visao.css
-├── equipe.css
-├── instalacoes.css
-├── projetos.css
-├── blog.css
-├── contato.css
-├── footer-enhanced.css
-├── script.js
-├── historia.js (✅ NOVO)
-├── missao-visao.js
-├── equipe.js
-├── instalacoes.js
-├── projetos.js
-├── blog.js
-├── contato.js
-├── footer-enhanced.js
-└── README.md (✅ NOVO)
-```
-
-### 6. Como Usar
-
-1. **Substitua os arquivos originais** pelos arquivos desta pasta
-2. **Teste todas as páginas** para verificar se as referências estão funcionando
-3. **Verifique especialmente a página história** que teve as principais correções
-
-### 7. Principais Benefícios
-
-- ✅ **Consistência**: Todas as páginas seguem o mesmo padrão
-- ✅ **Performance**: Carregamento otimizado de recursos
-- ✅ **Manutenibilidade**: Código mais organizado e documentado
-- ✅ **Experiência do Usuário**: Animações e interações melhoradas
-- ✅ **Acessibilidade**: Navegação por teclado e melhor semântica
-
-### 8. Próximos Passos Recomendados
-
-1. **Minificação**: Considere minificar CSS/JS para produção
-2. **Otimização de Imagens**: Implemente WebP e lazy loading
-3. **Service Worker**: Adicione cache para melhor performance offline
-4. **Testes**: Execute testes de acessibilidade e performance
-5. **Monitoramento**: Implemente analytics para acompanhar o uso
+🔗 **Deploy:** [jottaramoss.github.io/Fab-Lab](https://jottaramoss.github.io/Fab-Lab/)
 
 ---
 
-**Nota**: Todos os arquivos foram testados e validados. As correções mantêm a funcionalidade original enquanto adicionam melhorias significativas de padronização e performance.
+## 📋 Sobre o projeto
 
+Site desenvolvido para o **Instituto Fab Lab Brasil** — organização que conecta, certifica e fortalece a rede de Fab Labs no Brasil, promovendo educação, inovação e fabricação digital. O projeto foi iniciado com foco na divulgação do evento **FAB BR 25** (27 a 29 de novembro de 2025, Sorocaba/SP), mas foi pausado após a realização do evento.
+
+> ⚠️ **Projeto pausado** — o desenvolvimento foi interrompido pois o evento já havia ocorrido antes da conclusão do site. O código permanece como registro de portfólio.
+
+---
+
+## 🗂️ Páginas desenvolvidas
+
+| Página | Status |
+|---|---|
+| 🏠 `index.html` | ✅ Concluída — Hero, destaques, eventos, parceiros e contadores |
+| 📅 `eventos.html` | ✅ Concluída — Listagem dos eventos incluindo FAB BR 25 |
+| 🌐 `rede.html` | ✅ Concluída — Rede de Fab Labs |
+| 👥 `equipe.html` | ✅ Concluída — Equipe do instituto |
+| 🏭 `instalacoes.html` | ✅ Concluída — Instalações e laboratórios |
+| 📞 `contato.html` | ✅ Concluída — Formulário de contato |
+| 🔒 `privacidade.html` | ✅ Concluída |
+| 📄 `termos.html` | ✅ Concluída |
+| 🔧 `manutencao.html` | ⏸️ Placeholder — Páginas em construção |
+
+---
+
+## ✨ Funcionalidades implementadas
+
+- **Hero com slider** apresentando o evento FAB BR 25, Mestrado em Design e Fabricação Digital
+- **Contadores animados** — Laboratórios, Estudantes, Projetos e Estados
+- **Seção de eventos** com card em destaque do FAB BR 25
+- **Ticker de últimas notícias** na barra superior
+- **Grid de parceiros** — MIT, FIRJAN/SENAI, CNPq, FINEP, SEBRAE, EMBRAPII, Fab Lab, IMT
+- **Menu dropdown** com submenus para Sobre e Serviços
+- **Página de manutenção** para seções ainda não finalizadas
+- **Layout responsivo** para mobile e desktop
+- **Rodapé completo** com navegação, contato e links legais
+
+---
+
+## 🎯 Sobre o FAB BR 25
+
+O **FABBR25** foi o encontro anual da comunidade brasileira de fabricação digital, realizado de **27 a 29 de novembro de 2025** em **Sorocaba/SP**, reunindo:
+
+- Oficinas práticas de fabricação digital
+- Palestras e exposições
+- Networking com a comunidade ibero-americana
+- Integração com o **Ibero Fab Lat Fest 2025**
+
+---
+
+## 🤝 Parceiros representados no site
+
+MIT · FIRJAN · SENAI · CNPq · FINEP · SEBRAE · EMBRAPII · Instituto Fab Lab · IMT
+
+---
+
+## 🛠️ Tecnologias
+
+- **HTML5** — Estrutura semântica multi-página
+- **CSS3** — Estilização, animações e responsividade
+- **JavaScript** — Slider, contadores animados e interações
+- **GitHub Pages** — Hospedagem
+
+---
+
+## 📦 Como rodar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/JottaRamoss/Fab-Lab.git
+
+# Acesse a pasta
+cd Fab-Lab
+
+# Abra o index.html no navegador
+# Clique duplo no arquivo ou use Live Server no VS Code
+```
+
+---
+
+## 📄 Licença
+
+Projeto de portfólio pessoal. O conteúdo, logos e marcas referenciados pertencem aos seus respectivos donos (Instituto Fab Lab Brasil, FIRJAN, MIT, etc.).
+
+---
+
+<p align="center">Desenvolvido por <a href="https://github.com/JottaRamoss">JottaRamoss</a> 🚀</p>
